@@ -1,0 +1,75 @@
+{
+  "common": {
+    "exploreModels": "Jelajahi Model",
+    "allModels": "Semua Model",
+    "startingFrom": "Mulai dari",
+    "testDrive": "Minta Test Drive",
+    "downloadBrochure": "Unduh Brosur",
+    "findDealer": "Cari Dealer",
+    "backToModels": "Kembali ke Semua Model",
+    "learnMore": "Pelajari Lebih Lanjut",
+    "currency": "Rp",
+    "million": "Juta"
+  },
+  "nav": {
+    "home": "Beranda",
+    "models": "Model",
+    "language": "Bahasa"
+  },
+  "home": {
+    "heroTitle": "Power of Dreams",
+    "heroSubtitle": "Temukan seluruh lini Honda yang dirancang untuk jalanan Indonesia",
+    "scrollDown": "Gulir untuk menjelajahi",
+    "featuredTitle": "Model Unggulan",
+    "featuredSubtitle": "Jelajahi kendaraan terpopuler kami",
+    "whyHondaTitle": "Mengapa Honda",
+    "innovationTitle": "Inovasi",
+    "innovationDesc": "Teknologi mutakhir yang mendorong batas rekayasa otomotif",
+    "safetyTitle": "Keselamatan",
+    "safetyDesc": "Fitur keselamatan canggih yang dirancang untuk melindungi Anda dan orang tercinta",
+    "technologyTitle": "Teknologi",
+    "technologyDesc": "Konektivitas pintar dan antarmuka intuitif untuk pengemudi modern",
+    "ctaTitle": "Temukan Honda Sempurna Anda",
+    "ctaSubtitle": "Jelajahi seluruh lini kami dan temukan Honda yang sesuai gaya hidup Anda",
+    "ctaButton": "Lihat Semua Model"
+  },
+  "models": {
+    "pageTitle": "Semua Model",
+    "pageSubtitle": "Temukan seluruh lini Honda",
+    "filterAll": "Semua",
+    "filterSedan": "Sedan",
+    "filterHatchback": "Hatchback",
+    "filterSuv": "SUV",
+    "explore": "Jelajahi",
+    "newBadge": "Baru"
+  },
+  "detail": {
+    "specifications": "Spesifikasi",
+    "features": "Fitur Utama",
+    "colors": "Warna Tersedia",
+    "engine": "Mesin",
+    "dimensions": "Dimensi",
+    "safety": "Keselamatan",
+    "comfort": "Kenyamanan",
+    "horsepower": "Tenaga",
+    "torque": "Torsi",
+    "transmission": "Transmisi",
+    "fuelConsumption": "Konsumsi BBM",
+    "length": "Panjang",
+    "width": "Lebar",
+    "height": "Tinggi",
+    "wheelbase": "Jarak Sumbu Roda",
+    "seatingCapacity": "Kapasitas Tempat Duduk",
+    "airbags": "Airbag",
+    "interested": "Tertarik dengan model ini?",
+    "interestedSubtitle": "Ambil langkah selanjutnya menuju Honda impian Anda"
+  },
+  "footer": {
+    "quickLinks": "Tautan Cepat",
+    "followUs": "Ikuti Kami",
+    "contact": "Kontak",
+    "copyright": "Honda Indonesia. Hak cipta dilindungi.",
+    "address": "Jakarta, Indonesia",
+    "phone": "+62 21 1234 5678"
+  }
+}

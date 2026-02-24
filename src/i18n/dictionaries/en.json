@@ -1,0 +1,75 @@
+{
+  "common": {
+    "exploreModels": "Explore Models",
+    "allModels": "All Models",
+    "startingFrom": "Starting from",
+    "testDrive": "Request a Test Drive",
+    "downloadBrochure": "Download Brochure",
+    "findDealer": "Find Dealer",
+    "backToModels": "Back to All Models",
+    "learnMore": "Learn More",
+    "currency": "Rp",
+    "million": "Million"
+  },
+  "nav": {
+    "home": "Home",
+    "models": "Models",
+    "language": "Language"
+  },
+  "home": {
+    "heroTitle": "Power of Dreams",
+    "heroSubtitle": "Discover the complete Honda lineup designed for Indonesian roads",
+    "scrollDown": "Scroll to explore",
+    "featuredTitle": "Featured Models",
+    "featuredSubtitle": "Explore our most popular vehicles",
+    "whyHondaTitle": "Why Honda",
+    "innovationTitle": "Innovation",
+    "innovationDesc": "Cutting-edge technology that pushes the boundaries of automotive engineering",
+    "safetyTitle": "Safety",
+    "safetyDesc": "Advanced safety features designed to protect you and your loved ones",
+    "technologyTitle": "Technology",
+    "technologyDesc": "Smart connectivity and intuitive interfaces for the modern driver",
+    "ctaTitle": "Find Your Perfect Honda",
+    "ctaSubtitle": "Explore our complete lineup and discover the Honda that fits your lifestyle",
+    "ctaButton": "View All Models"
+  },
+  "models": {
+    "pageTitle": "All Models",
+    "pageSubtitle": "Discover the complete Honda lineup",
+    "filterAll": "All",
+    "filterSedan": "Sedan",
+    "filterHatchback": "Hatchback",
+    "filterSuv": "SUV",
+    "explore": "Explore",
+    "newBadge": "New"
+  },
+  "detail": {
+    "specifications": "Specifications",
+    "features": "Key Features",
+    "colors": "Available Colors",
+    "engine": "Engine",
+    "dimensions": "Dimensions",
+    "safety": "Safety",
+    "comfort": "Comfort",
+    "horsepower": "Horsepower",
+    "torque": "Torque",
+    "transmission": "Transmission",
+    "fuelConsumption": "Fuel Consumption",
+    "length": "Length",
+    "width": "Width",
+    "height": "Height",
+    "wheelbase": "Wheelbase",
+    "seatingCapacity": "Seating Capacity",
+    "airbags": "Airbags",
+    "interested": "Interested in this model?",
+    "interestedSubtitle": "Take the next step towards owning your dream Honda"
+  },
+  "footer": {
+    "quickLinks": "Quick Links",
+    "followUs": "Follow Us",
+    "contact": "Contact",
+    "copyright": "Honda Indonesia. All rights reserved.",
+    "address": "Jakarta, Indonesia",
+    "phone": "+62 21 1234 5678"
+  }
+}
