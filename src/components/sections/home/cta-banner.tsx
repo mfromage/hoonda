@@ -33,9 +33,9 @@ export function CTABanner({ lang, dictionary }: CTABannerProps) {
       />
 
       {/* Content */}
-      <div className="relative z-10 mx-auto max-w-4xl px-6 text-center">
+      <div className="relative z-10 mx-auto max-w-4xl px-4 text-center sm:px-6 lg:px-8">
         <motion.h2
-          className="text-4xl font-bold tracking-tight sm:text-5xl"
+          className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}

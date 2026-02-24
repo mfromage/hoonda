@@ -12,8 +12,8 @@ interface DetailCTAProps {
 export function DetailCTA({ lang, dictionary }: DetailCTAProps) {
   return (
     <section className="bg-gradient-to-r from-zinc-900 to-zinc-800 py-20 text-white">
-      <div className="mx-auto max-w-6xl px-6 text-center">
-        <h2 className="mb-4 text-3xl font-bold tracking-tight md:text-4xl">
+      <div className="mx-auto max-w-6xl px-4 text-center sm:px-6 lg:px-8">
+        <h2 className="mb-4 text-2xl font-bold tracking-tight sm:text-3xl md:text-4xl">
           {dictionary.detail.interested}
         </h2>
         <p className="mb-10 text-lg text-white/70">

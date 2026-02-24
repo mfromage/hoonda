@@ -18,9 +18,9 @@ export function HeroSection({ lang, dictionary }: HeroSectionProps) {
       <div className="absolute inset-0 bg-black/30" />
 
       {/* Content */}
-      <div className="relative z-10 flex flex-col items-center px-6 text-center text-white">
+      <div className="relative z-10 flex flex-col items-center px-4 text-center text-white sm:px-6">
         <motion.h1
-          className="text-5xl font-bold tracking-tight sm:text-6xl lg:text-7xl"
+          className="text-3xl font-bold tracking-tight sm:text-5xl md:text-6xl lg:text-7xl"
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}

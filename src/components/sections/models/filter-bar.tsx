@@ -22,7 +22,7 @@ export function FilterBar({
   dictionary,
 }: FilterBarProps) {
   return (
-    <div className="flex items-center justify-center gap-2">
+    <div className="flex items-center justify-center gap-1 overflow-x-auto sm:gap-2">
       {filters.map((filter) => {
         const isActive = activeFilter === filter.key;
 
@@ -30,7 +30,7 @@ export function FilterBar({
           <button
             key={filter.key}
             onClick={() => onFilterChange(filter.key)}
-            className="relative px-6 py-2 text-sm font-medium transition-colors"
+            className="relative shrink-0 px-4 py-2 text-sm font-medium transition-colors sm:px-6"
           >
             <span className={isActive ? "text-white" : "text-zinc-400 hover:text-zinc-200"}>
               {dictionary[filter.labelKey]}

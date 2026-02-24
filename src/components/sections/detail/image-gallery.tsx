@@ -21,7 +21,7 @@ export function ImageGallery({ model }: ImageGalleryProps) {
   const [selectedIndex, setSelectedIndex] = useState(0);
 
   return (
-    <section className="bg-white py-12 px-6">
+    <section className="bg-white px-4 py-12 sm:px-6 lg:px-8">
       <div className="mx-auto max-w-6xl">
         {/* Main image area */}
         <div className="relative aspect-video w-full overflow-hidden rounded-2xl">

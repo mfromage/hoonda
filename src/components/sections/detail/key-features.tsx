@@ -45,7 +45,7 @@ export function KeyFeatures({ model, lang, dictionary }: KeyFeaturesProps) {
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   return (
-    <section className="py-20 px-6">
+    <section className="px-4 py-20 sm:px-6 lg:px-8">
       <div className="mx-auto max-w-6xl">
         <h2 className="mb-12 text-center text-3xl font-bold tracking-tight md:text-4xl">
           {dictionary.detail.features}

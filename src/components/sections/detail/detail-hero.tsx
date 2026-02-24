@@ -26,7 +26,7 @@ export function DetailHero({ model, lang, dictionary }: DetailHeroProps) {
     <section
       className={`relative w-full bg-gradient-to-br ${gradient} pt-32 pb-20 text-white`}
     >
-      <div className="mx-auto max-w-6xl px-6">
+      <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
@@ -37,7 +37,7 @@ export function DetailHero({ model, lang, dictionary }: DetailHeroProps) {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.1, ease: "easeOut" }}
-            className="text-5xl font-bold tracking-tight md:text-7xl"
+            className="text-4xl font-bold tracking-tight sm:text-5xl md:text-7xl"
           >
             {model.name}
           </motion.h1>

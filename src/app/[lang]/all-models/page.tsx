@@ -39,19 +39,19 @@ export default async function AllModelsPage({ params }: AllModelsPageProps) {
   return (
     <div>
       {/* Page header */}
-      <section className="px-6 pb-12 pt-32">
+      <section className="px-4 pb-12 pt-32 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-7xl text-center">
-          <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl">
+          <h1 className="text-3xl font-bold tracking-tight text-white sm:text-4xl md:text-5xl">
             {dictionary.models.pageTitle}
           </h1>
-          <p className="mt-4 text-lg text-zinc-400">
+          <p className="mt-4 text-base text-zinc-400 sm:text-lg">
             {dictionary.models.pageSubtitle}
           </p>
         </div>
       </section>
 
       {/* Model grid with filters */}
-      <section className="mx-auto max-w-7xl px-6 pb-20">
+      <section className="mx-auto max-w-7xl px-4 pb-20 sm:px-6 lg:px-8">
         <ModelGrid lang={lang} dictionary={dictionary} />
       </section>
     </div>
