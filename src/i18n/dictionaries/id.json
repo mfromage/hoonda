@@ -62,7 +62,15 @@
     "seatingCapacity": "Kapasitas Tempat Duduk",
     "airbags": "Airbag",
     "interested": "Tertarik dengan model ini?",
-    "interestedSubtitle": "Ambil langkah selanjutnya menuju Honda impian Anda"
+    "interestedSubtitle": "Ambil langkah selanjutnya menuju Honda impian Anda",
+    "theNew": "THE NEW",
+    "requestOffer": "Minta Penawaran",
+    "downloadSpec": "Unduh Spesifikasi",
+    "technicalData": "Data Teknis",
+    "designTitle": "Desain khas yang menampilkan karakter.",
+    "designSubtitle": "Detail yang dirancang dengan cermat membuat setiap sudut berkesan",
+    "faqTitle": "Pertanyaan yang sering diajukan",
+    "findOutMore": "Cari tahu lebih lanjut"
   },
   "footer": {
     "quickLinks": "Tautan Cepat",

@@ -62,7 +62,15 @@
     "seatingCapacity": "Seating Capacity",
     "airbags": "Airbags",
     "interested": "Interested in this model?",
-    "interestedSubtitle": "Take the next step towards owning your dream Honda"
+    "interestedSubtitle": "Take the next step towards owning your dream Honda",
+    "theNew": "THE NEW",
+    "requestOffer": "Request an Offer",
+    "downloadSpec": "Download Spec Card",
+    "technicalData": "Technical Data",
+    "designTitle": "Distinctive design that displays character.",
+    "designSubtitle": "Thoughtfully crafted details that make every angle memorable",
+    "faqTitle": "Frequently asked questions",
+    "findOutMore": "Find out more"
   },
   "footer": {
     "quickLinks": "Quick Links",

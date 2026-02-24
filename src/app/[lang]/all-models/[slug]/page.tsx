@@ -4,10 +4,13 @@ import { i18n, type Locale } from "@/i18n/config";
 import { getDictionary } from "@/i18n/get-dictionary";
 import { getModelBySlug, getAllSlugs } from "@/data/models";
 import { DetailHero } from "@/components/sections/detail/detail-hero";
-import { ImageGallery } from "@/components/sections/detail/image-gallery";
-import { KeyFeatures } from "@/components/sections/detail/key-features";
-import { SpecsTable } from "@/components/sections/detail/specs-table";
+import { KeyStats } from "@/components/sections/detail/key-stats";
+import { IntroStory } from "@/components/sections/detail/intro-story";
 import { ColorPicker } from "@/components/sections/detail/color-picker";
+import { KeyFeatures } from "@/components/sections/detail/key-features";
+import { DesignStories } from "@/components/sections/detail/design-stories";
+import { SpecsTable } from "@/components/sections/detail/specs-table";
+import { FAQSection } from "@/components/sections/detail/faq-section";
 import { DetailCTA } from "@/components/sections/detail/detail-cta";
 
 interface ModelDetailPageProps {
@@ -50,10 +53,13 @@ export default async function ModelDetailPage({ params }: ModelDetailPageProps) 
   return (
     <>
       <DetailHero model={model} lang={locale} dictionary={dictionary} />
-      <ImageGallery model={model} lang={locale} />
-      <KeyFeatures model={model} lang={locale} dictionary={dictionary} />
-      <SpecsTable model={model} dictionary={dictionary} />
+      <KeyStats model={model} lang={locale} dictionary={dictionary} />
+      <IntroStory model={model} lang={locale} />
       <ColorPicker model={model} lang={locale} dictionary={dictionary} />
+      <KeyFeatures model={model} lang={locale} dictionary={dictionary} />
+      <DesignStories model={model} lang={locale} dictionary={dictionary} />
+      <SpecsTable model={model} dictionary={dictionary} />
+      <FAQSection model={model} lang={locale} dictionary={dictionary} />
       <DetailCTA lang={locale} dictionary={dictionary} />
     </>
   );

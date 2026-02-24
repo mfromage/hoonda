@@ -2,7 +2,7 @@
 
 import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
-import { Gauge, Shield, Sparkles, Fuel, Cog, Eye } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import type { Model } from "@/data/models";
 import type { Locale } from "@/i18n/config";
 import type { Dictionary } from "@/i18n/get-dictionary";
@@ -13,13 +13,10 @@ interface KeyFeaturesProps {
   dictionary: Dictionary;
 }
 
-const iconMap: Record<string, React.ComponentType<{ className?: string }>> = {
-  Gauge,
-  Shield,
-  Sparkles,
-  Fuel,
-  Cog,
-  Eye,
+const categoryGradients: Record<Model["category"], string> = {
+  suv: "bg-gradient-to-br from-emerald-100 to-emerald-200",
+  sedan: "bg-gradient-to-br from-indigo-100 to-indigo-200",
+  hatchback: "bg-gradient-to-br from-sky-100 to-sky-200",
 };
 
 const containerVariants = {
@@ -43,44 +40,39 @@ const cardVariants = {
 export function KeyFeatures({ model, lang, dictionary }: KeyFeaturesProps) {
   const ref = useRef<HTMLDivElement>(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
+  const gradient = categoryGradients[model.category];
 
   return (
     <section className="px-4 py-20 sm:px-6 lg:px-8">
-      <div className="mx-auto max-w-6xl">
-        <h2 className="mb-12 text-center text-3xl font-bold tracking-tight md:text-4xl">
-          {dictionary.detail.features}
-        </h2>
+      <h2 className="text-center text-3xl font-light md:text-4xl">
+        {dictionary.detail.features}
+      </h2>
 
-        <motion.div
-          ref={ref}
-          variants={containerVariants}
-          initial="hidden"
-          animate={isInView ? "visible" : "hidden"}
-          className="grid grid-cols-1 gap-8 md:grid-cols-3"
-        >
-          {model.features.map((feature, index) => {
-            const IconComponent = iconMap[feature.icon] ?? Gauge;
+      <motion.div
+        ref={ref}
+        variants={containerVariants}
+        initial="hidden"
+        animate={isInView ? "visible" : "hidden"}
+        className="mx-auto mt-12 grid max-w-6xl grid-cols-1 gap-8 md:grid-cols-3"
+      >
+        {model.features.map((feature, index) => (
+          <motion.div key={index} variants={cardVariants} className="flex flex-col">
+            {/* Image placeholder */}
+            <div className={`aspect-[4/3] rounded-lg ${gradient} mb-6`} />
 
-            return (
-              <motion.div
-                key={index}
-                variants={cardVariants}
-                className="flex flex-col items-center rounded-2xl border border-zinc-100 bg-white p-8 text-center shadow-sm"
-              >
-                <div className="mb-4 flex h-14 w-14 items-center justify-center rounded-full bg-zinc-100">
-                  <IconComponent className="h-7 w-7 text-zinc-700" />
-                </div>
-                <h3 className="mb-2 text-lg font-semibold">
-                  {feature.title[lang]}
-                </h3>
-                <p className="text-sm leading-relaxed text-zinc-500">
-                  {feature.description[lang]}
-                </p>
-              </motion.div>
-            );
-          })}
-        </motion.div>
-      </div>
+            <h3 className="text-xl font-medium">{feature.title[lang]}</h3>
+
+            <p className="mt-3 leading-relaxed text-zinc-600">
+              {feature.description[lang]}
+            </p>
+
+            <span className="mt-4 inline-flex items-center gap-1 text-sm font-medium">
+              {dictionary.detail.findOutMore}
+              <ArrowRight size={14} />
+            </span>
+          </motion.div>
+        ))}
+      </motion.div>
     </section>
   );
 }

@@ -16,16 +16,14 @@ interface SpecRow {
 
 function SpecsRows({ rows }: { rows: SpecRow[] }) {
   return (
-    <div className="overflow-hidden rounded-lg border border-zinc-200">
-      {rows.map((row, index) => (
+    <div>
+      {rows.map((row) => (
         <div
           key={row.label}
-          className={`flex items-center justify-between px-4 py-3 ${
-            index % 2 === 0 ? "bg-white" : "bg-zinc-100"
-          }`}
+          className="flex justify-between border-b border-zinc-200 py-4"
         >
-          <span className="text-sm text-zinc-500">{row.label}</span>
-          <span className="text-sm font-bold text-zinc-900">{row.value}</span>
+          <span className="text-zinc-500">{row.label}</span>
+          <span className="font-medium">{row.value}</span>
         </div>
       ))}
     </div>
@@ -67,19 +65,26 @@ export function SpecsTable({ model, dictionary }: SpecsTableProps) {
   ];
 
   return (
-    <section className="bg-zinc-50 px-4 py-20 sm:px-6 lg:px-8">
-      <div className="mx-auto max-w-6xl">
-        <h2 className="mb-12 text-center text-3xl font-bold tracking-tight md:text-4xl">
-          {dictionary.detail.specifications}
-        </h2>
+    <section
+      id="specifications"
+      className="bg-zinc-50 px-4 py-20 sm:px-6 lg:px-8"
+    >
+      <h2 className="text-center text-3xl font-light md:text-4xl">
+        {dictionary.detail.specifications}
+      </h2>
 
+      <div className="mx-auto mt-12 max-w-3xl">
         <Tabs defaultValue="engine" className="w-full">
           <TabsList className="mx-auto mb-8 w-fit">
-            <TabsTrigger value="engine">{dictionary.detail.engine}</TabsTrigger>
+            <TabsTrigger value="engine">
+              {dictionary.detail.engine}
+            </TabsTrigger>
             <TabsTrigger value="dimensions">
               {dictionary.detail.dimensions}
             </TabsTrigger>
-            <TabsTrigger value="safety">{dictionary.detail.safety}</TabsTrigger>
+            <TabsTrigger value="safety">
+              {dictionary.detail.safety}
+            </TabsTrigger>
             <TabsTrigger value="comfort">
               {dictionary.detail.comfort}
             </TabsTrigger>
